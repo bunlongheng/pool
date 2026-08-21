@@ -148,3 +148,9 @@ pool/
 ## License
 
 [MIT](LICENSE) (c) Bunlong Heng - covers the code. `public/theme.mp3` is not covered by the MIT license.
+
+---
+
+<p align="center">
+  <sub>Built by <a href="https://bunlongheng.com">Bunlong Heng</a> &middot; <a href="https://bunlongheng.com/projects/pool">See it in my portfolio &rarr;</a></sub>
+</p>
