@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Fraunces, Familjen_Grotesk } from "next/font/google";
 import "./globals.css";
+import SwRegister from "./sw-register";
 
 // Self-hosted at build time (served from /_next/static), so the locked CSP
 // font-src 'self' stays happy - no runtime request to Google.
@@ -21,6 +22,7 @@ export const metadata: Metadata = {
   title: "Pool",
   description: "A 3D pool game that teaches categories - countries, colors, fruits, veggies, and US state flags.",
   applicationName: "Pool",
+  manifest: "/manifest.webmanifest",
   // Big link-preview card when shared (Open Graph + Twitter summary_large_image).
   // The hero image is auto-linked from app/opengraph-image.png + app/twitter-image.png.
   openGraph: {
@@ -55,7 +57,10 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${display.variable} ${body.variable} h-full antialiased`}>
-      <body className="h-full">{children}</body>
+      <body className="h-full">
+        {children}
+        <SwRegister />
+      </body>
     </html>
   );
 }
