@@ -1,3 +1,13 @@
+<div align="center">
+  <img src="docs/icon.png" alt="Pool" width="96" height="96" />
+  <h1>Pool</h1>
+  <p><em>3D WebGL pool with 194 flag balls, a look-ahead AI opponent, and a replay highlight reel</em></p>
+  <p><a href="https://pool-bheng.vercel.app">Live</a> &middot; <a href="https://github.com/bunlongheng/pool">Repo</a> &middot; <a href="https://bunlongheng.com/projects?name=pool">Portfolio</a></p>
+  <img src="docs/social-preview.png" alt="Pool - preview" width="820" />
+</div>
+
+---
+
 # Pool
 
 A landscape-first 3D WebGL pool game that also teaches categories: the balls can be country flags, colors, fruits, vegetables, or US state flags, and each one is named aloud when it drops.
