@@ -1014,7 +1014,7 @@ export default function PoolTable() {
             ))}
         </div>
 
-        <div className="flex shrink-0 items-center gap-6 sm:gap-8">
+        <div className="flex shrink-0 items-center gap-3 sm:gap-8">
           <Stat label="Score" value={replay ? replayTray.length : potted} />
           <Stat label="Shots" value={shots} />
           <Stat label="Died" value={deaths} />
@@ -1044,7 +1044,7 @@ export default function PoolTable() {
       {/* Rotate hint on portrait (kept off the felt, in the top band area) */}
       {portrait && (
         <div
-          className="pointer-events-none absolute left-1/2 z-30 -translate-x-1/2 rounded-full bg-[#d9b25a]/95 px-3 py-1 text-xs font-semibold text-[#231a08] shadow-lg"
+          className="pointer-events-none absolute left-1/2 z-30 -translate-x-1/2 whitespace-nowrap rounded-full bg-[#d9b25a]/95 px-3 py-1 text-xs font-semibold text-[#231a08] shadow-lg"
           style={{ top: HUD_TOP + 6 }}
         >
           Rotate to landscape for the full table
